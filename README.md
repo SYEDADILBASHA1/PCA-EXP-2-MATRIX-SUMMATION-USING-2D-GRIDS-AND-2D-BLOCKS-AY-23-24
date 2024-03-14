@@ -2,7 +2,7 @@
 
 <h3>AIM:To perform matrix summation with a 2D grid and 2D blocks and adapting it to integer matrix addition.</h3>
 <h3>ENTER YOUR NAME:SYED ADIL BASHA</h3>
-<h3>ENTER YOUR REGISTER NO:21222</h3>
+<h3>ENTER YOUR REGISTER NO:212221043008</h3>
 <h3>EX. NO:02</h3>
 <h3>DATE:14-03-2024</h3>
 <h1> <align=center> MATRIX SUMMATION WITH A 2D GRID AND 2D BLOCKS </h3>
