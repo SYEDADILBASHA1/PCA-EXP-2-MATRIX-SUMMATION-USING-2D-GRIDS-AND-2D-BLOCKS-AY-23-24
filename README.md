@@ -192,6 +192,7 @@ memset(gpuRef, 0, nBytes);
 iStart = cpuSecond();
 sumMatrixOnHost (h_A, h_B, hostRef, nx,ny);
 iElaps = cpuSecond() - iStart;
+printf("sumMatrixOnHost elapsed %f sec\n",iElaps);
 // malloc device global memory
 float *d_MatA, *d_MatB, *d_MatC;
 cudaMalloc((void **)&d_MatA, nBytes);
@@ -233,9 +234,10 @@ return (0);
 ## OUTPUT:
 ![Screenshot (159)](https://github.com/SYEDADILBASHA1/PCA-EXP-2-MATRIX-SUMMATION-USING-2D-GRIDS-AND-2D-BLOCKS-AY-23-24/assets/134796157/fb2eefc1-2ec8-493d-811b-0ed8186f0d58)
 
-![Screenshot (160)](https://github.com/SYEDADILBASHA1/PCA-EXP-2-MATRIX-SUMMATION-USING-2D-GRIDS-AND-2D-BLOCKS-AY-23-24/assets/134796157/dc19c45f-5dae-4c72-8dd9-f1a88a0740ea)
+![Screenshot (161)](https://github.com/SYEDADILBASHA1/PCA-EXP-2-MATRIX-SUMMATION-USING-2D-GRIDS-AND-2D-BLOCKS-AY-23-24/assets/134796157/5b0a34b1-70f7-482a-820c-868a4167d56a)
+
 
 
 
 ## RESULT:
-The host took _________ seconds to complete it’s computation, while the GPU outperforms the host and completes the computation in ________ seconds. Therefore, float variables in the GPU will result in the best possible result. Thus, matrix summation using 2D grids and 2D blocks has been performed successfully.
+The host took 0.843954 seconds to complete it’s computation, while the GPU outperforms the host and completes the computation in 0.119825 seconds. Therefore, float variables in the GPU will result in the best possible result. Thus, matrix summation using 2D grids and 2D blocks has been performed successfully.
